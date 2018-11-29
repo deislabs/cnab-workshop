@@ -9,8 +9,8 @@
 
 1. [What is CNAB?][what-cnab]
 2. [Getting started - prerequisites][prerequisites]
-3. [Installing bundles][install]
-4. [Building and signing bundles][build-sign]
+3. [Building and signing bundles][build-sign]
+4. [Installing bundles][install]
 5. [Exporting and importing bundles][export-import]
 
 
