@@ -24,11 +24,7 @@ The bundle definition can:
 - A signed JSON object stored in a `bundle.cnab` file, as described in [the signature definition](https://github.com/deislabs/cnab-spec/blob/master/105-signing.md) - as a signed bundle definition represents an immutable bundle, all invocation images and images references must have a digest.
 
 
-# [Next section][next]
-
 
 [cnab]: https://cnab.io
 [cnab-spec]: https://github.com/deislabs/cnab-spec/
 [bundle-json]: https://github.com/deislabs/cnab-spec/blob/master/101-bundle-json.md
-
-[next]: 02-prerequisites.md

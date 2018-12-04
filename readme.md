@@ -18,6 +18,6 @@
 [cnab-spec]: https://github.com/deislabs/cnab-spec/
 [what-cnab]: https://github.com/deislabs/cnab-spec/blob/master/100-CNAB.md
 [prerequisites]: content/02-prerequisites.md
-[install]: content/03-install.md
-[build-sign]: content/04-build-sign.md
+[build-sign]: content/03-build-sign.md
+[install]: content/04-install.md
 [export-import]: content/05-export-import.md
