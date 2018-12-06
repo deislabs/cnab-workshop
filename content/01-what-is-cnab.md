@@ -1,8 +1,8 @@
-# What is [CNAB]cnab?
+# What is [CNAB][cnab]?
 
 > A more detailed description for Cloud Native Application Bundles can be found in [the official CNAB specification, on GitHub][cnab-spec].
 
-[Cloud Native Application Bundles][cnab] (CNAB) are a _standard packaging format_ for multi-component distributed applications. It allows packages to target different runtimes and architectures. It empowers application distributors to package applications for deployment on a wide variety of cloud platforms, cloud providers, and cloud services. It also provides the capabilities necessary for delivering multi-container applications in disconnected environments.
+[Cloud Native Application Bundles][cnab] (CNAB) are a _standard packaging format_ for distributed applications. It allows packages to target different runtimes and architectures. It empowers application distributors to package applications for deployment on a wide variety of cloud platforms, cloud providers, and cloud services. It also provides the capabilities necessary for delivering applications in disconnected environments.
 
 CNAB is not a platform-specific tool. While it uses containers for encapsulating installation logic, it remains un-opinionated about what cloud environment it runs in. CNAB developers can bundle applications targeting environments spanning IaaS (like OpenStack or Azure), container orchestrators (like Kubernetes or Nomad), container runtimes (like local Docker or ACI), and cloud platform services (like object storage or Database as a Service). CNAB can also be used for packaging other distributed applications, such as IoT or edge computing.
 
