@@ -32,42 +32,19 @@ Dockerfile  app
 > The specification describes [the bundle runtime][bundle-runtime] in detail - but in short, when executing an _action_ on a bundle (such as _install_, or _upgrade_), any tool that implements the CNAB specification must run the executable found in `/cnab/app/run` inside the invocation image. This needs the _action_ to be executed, and uses environment variables and files injected into the invocation image at runtime to execute the required action.
 
 
-In this case, we have the simplest executable that satisfies the requirements for the bundle runtime - a Bash script - but keep in mind that any executable that correctly satisfies the requirements for the bundle runtime can be used as the run tool - let's modify it to print the name of the action we executed, together with the installation name:
+In this case, we have the simplest executable that satisfies the requirements for the bundle runtime - a Bash script - but keep in mind that any executable that correctly satisfies the requirements for the bundle runtime can be used as the run tool.
 
 > Note that in a normal workflow for developing bundles, the author is not always supposed to write the run tool from scratch - there is already [an existing collection of bundles][bundles] for tools such as Terraform, Helm or Ansible, and when developing a bundle that uses these tools, these _base bundles_ can be used.
 
 ```bash
 $ cat /cnab/app/run
 
-#!/bin/sh
-
-#set -eo pipefail
-
+#!/bin/bash
 action=$CNAB_ACTION
-name=$CNAB_INSTALLATION_NAME 
-
-echo "Port parameter was set to ${CNAB_P_PORT}"
-case $action in
-    install)
-    echo "Install action"
-    ;;
-    uninstall)
-    echo "uninstall action"
-    ;;
-    upgrade)
-    echo "Upgrade action"
-    ;;
-    downgrade)
-    echo "Downgrade action"
-    ;;
-    status)
-    echo "Status action"
-    ;;
-    *)
-    echo "No action for $action"
-    ;;
-esac
-echo "Action $action complete for $name"
+if [[ $action == "install" ]]; then
+echo "hey I am installing things over here"
+elif [[ $action == "uninstall" ]]; then
+echo "hey I am uninstalling things now"
 fi
 ```
 
@@ -140,23 +117,18 @@ Now that we've built our very first bundle, it's time to install it - keep in mi
 ```
 $ duffle install our-first-test helloworld
 Executing install action...
-Port parameter was set to
-Install action
-Action install complete for our-first-test
+hey I am installing things over here
 
 $ duffle status our-first-test
 Installation Name:      our-first-test
-Installed at:           2018-12-04 17:10:55.8193483 +0200 STD
-Last Modified at:       2018-12-04 17:10:58.5863248 +0200 STD
-Current Revision:       01CXWWBCGTMHVVBFX0X2D2CRY2
+Installed at:           2018-12-07 17:50:33.6694255 +0200 STD
+Last Modified at:       2018-12-07 17:50:35.4166926 +0200 STD
+Current Revision:       01CY4NT2MR7SC19AHC2ZQ7W517
 Bundle:                 helloworld
 Last Action Performed:  install
 Last Action Status:     success
 Last Action Message:
 Executing status action in bundle...
-Port parameter was set to
-Status action
-Action status complete for our-first-test
 ```
 
 And that's it - our bundle was executed using the run script we defined earlier, and it used the _install action_ defined by the Duffle CLI, in `duffle install`.
