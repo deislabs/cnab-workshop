@@ -141,9 +141,6 @@ By default, all bundles built by Duffle are cryptographically signed, and by def
 ```
 $ duffle bundle verify helloworld
 Signed by "[anonymous key]" (D563 47CA C1BE BEF3 EBC4 1B75 B43F 79B2 BA39 F560)
-
-$ duffle bundle verify helloworld
-Signed by "[anonymous key]" (D563 47CA C1BE BEF3 EBC4 1B75 B43F 79B2 BA39 F560)
 ```
 
 You can add your own GPG secret keys to sign bundles, and share your public key so that others can verify bundles you built and signed:
