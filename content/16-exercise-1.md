@@ -1,9 +1,10 @@
 # Exercise: Hello World
 
-1. Create a directory for your bundle.
+1. Create a directory for your bundle and change into it:
 
     ```
-    mkdir Hello
+    mkdir hello
+    cd hello
     ```
 
 2. Scaffold a bundle:
