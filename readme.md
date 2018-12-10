@@ -14,6 +14,7 @@
 5. [Exporting and importing bundles][export-import]
 6. [Introducing Porter][porter]
 8. [Porter Manifest][porter-manifest]
+8. [Bundle Dependencies][bundle-dep]
 9. [Porter Mixins][porter-mixins]
 7. [Porter Installation][porter-install]
 9. [Exercise: Hello World][exercise-1]
@@ -32,3 +33,4 @@
 [porter-mixins]: content/13-porter-mixins.md
 [exercise-1]: content/16-exercise-1.md
 [exercise-2]: content/16-exercise-2.md
+[bundle-deps]: content/12-manifest-deps.md
