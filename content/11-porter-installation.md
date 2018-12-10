@@ -18,5 +18,3 @@ curl https://deislabs.blob.core.windows.net/porter/latest/install-linux.sh | bas
 ```
 iwr ‘https://deislabs.blob.core.windows.net/porter/latest/install-windows.ps1' -UseBasicParsing | iex
 ```
-
-[porter-or-duffle]: https://github.com/deislabs/porter/blob/master/porter-or-duffle.md
