@@ -116,5 +116,5 @@ This will prompt you to for a values for credentials in the bundle. Use the envi
 Finally, you're ready to install the bundle:
 
 ```
-duffle install HELLO2 -c azure-mysql-wordpress porter-wordpress -f bundle.json --insecure
+duffle install porter-wordpress -c azure-mysql-wordpress -f bundle.json --insecure
 ```
