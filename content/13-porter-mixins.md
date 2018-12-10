@@ -31,4 +31,9 @@ Manage helm charts.
 * Any secrets created by the chart are made available as outputs to the rest of the bundle.
 
 ## Azure Mixin
-Work with Azure Cloud resources and services.
+Work with Azure Cloud resources and services. Works with:
+
+* ARM templates
+* Azure Container Instances (ACI)
+* MySQL
+* CosmosDB

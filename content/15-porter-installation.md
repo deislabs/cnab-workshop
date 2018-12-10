@@ -1,5 +1,5 @@
 # Install Porter
-Porter requires duffle, so make sure you have [duffle installed][02-prerequisites.md].
+Porter requires duffle, so make sure you have [duffle installed](02-prerequisites.md).
 
 ##MacOS
 

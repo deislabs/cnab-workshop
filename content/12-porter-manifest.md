@@ -1,4 +1,43 @@
-# Porter Manifest
+# Porter Manifests
+
+## Hello World
+
+```yaml
+#
+# Standard CNAB Metadata
+#
+name: HELLO
+version: 0.1.0
+invocationImage: porter-hello:latest
+
+#
+# Porter specific configuration ahead
+#
+
+# Mixins can be pulled in to make working with other systems easier
+mixins:
+- exec
+
+# Steps to execute during the CNAB install action
+install:
+- description: "Install Hello World"
+  exec:
+    command: bash
+    arguments:
+    - -c
+    - echo Hello World
+
+# Steps to execute during the CNAB uninstall action
+uninstall:
+- description: "Uninstall Hello World"
+  exec:
+    command: bash
+    arguments:
+    - -c
+    - echo Goodbye World
+```
+
+## Kubernetes Hello World
 
 ```yaml
 #

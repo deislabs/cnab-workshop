@@ -13,9 +13,11 @@
 4. [Using parameters and credentials][params-creds]
 5. [Exporting and importing bundles][export-import]
 6. [Introducing Porter][porter]
-7. [Porter Installation][porter-install]
 8. [Porter Manifest][porter-manifest]
 9. [Porter Mixins][porter-mixins]
+7. [Porter Installation][porter-install]
+9. [Exercise: Hello World][exercise-1]
+10. [Exercise: Kubernetes Hello World][exercise-2]
 
 [cnab]: https://cnab.io/
 [cnab-spec]: https://github.com/deislabs/cnab-spec/
@@ -25,6 +27,8 @@
 [params-creds]: content/04-params-creds.md
 [export-import]: content/05-export-import.md
 [porter]: content/10-porter.md
-[porter-install]: content/11-porter-installation.md
+[porter-install]: content/15-porter-installation.md
 [porter-manifest]: content/12-porter-manifest.md
 [porter-mixins]: content/13-porter-mixins.md
+[exercise-1]: content/16-exercise-1.md
+[exercise-2]: content/16-exercise-2.md
