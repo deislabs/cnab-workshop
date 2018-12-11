@@ -118,3 +118,6 @@ Finally, you're ready to install the bundle:
 ```
 duffle install porter-wordpress -c azure-mysql-wordpress -f bundle.json --insecure
 ```
+
+**NOTE**
+This assumes that you have initialized helm on your cluster beforehand. Make sure to run `helm init` against it before installing the bundle.
