@@ -93,9 +93,11 @@ fi
 ```
 
 
-Now if we build the bundle using `duffle build`, when installing it, we can pass the parameter using `--set greeting=<your-greeting>`:
+Now if we rebuild the bundle and install it, we can pass the parameter using `--set greeting=<your-greeting>`:
 
 ```
+$ duffle build
+...
 $ duffle install param-test helloworld --set greeting=HELLO
 Executing install action...
 hey I am installing things over here, HELLO was passed as param
