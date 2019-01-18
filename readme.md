@@ -9,7 +9,7 @@
 
 1. [What is CNAB?][what-cnab] - high level overview of Cloud Native Application Bundles and Duffle
 2. [Getting started][prerequisites] - setting up your local environment
-3. [Building and singing bundles][build-sign] - building your first Cloud Native Application Bundles
+3. [Building and signing bundles][build-sign] - building your first Cloud Native Application Bundles
 4. [Using parameters and credentials][params-creds]
 5. [Exporting and importing bundles][export-import]
 6. [Introducing Porter][porter]
