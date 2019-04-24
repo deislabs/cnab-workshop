@@ -37,7 +37,7 @@ In this case, we have the simplest executable that satisfies the requirements fo
 > Note that in a normal workflow for developing bundles, the author is not always supposed to write the run tool from scratch - there is already [an existing collection of bundles][bundles] for tools such as Terraform, Helm or Ansible, and when developing a bundle that uses these tools, these _base bundles_ can be used.
 
 ```bash
-$ cat /cnab/app/run
+$ cat cnab/app/run
 
 #!/bin/bash
 action=$CNAB_ACTION

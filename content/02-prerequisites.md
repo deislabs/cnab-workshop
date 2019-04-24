@@ -15,7 +15,7 @@ To check if Duffle is installed locally, try to check the version. Depending on 
 
 ```console
 $ duffle version
-0.1.0-ralpha.4+dramallamabuie
+0.1.0-ralpha.5+englishrose
 ```
 
 If you already have a Go development environment configured, you can also clone the repository and build the binary yourself. Instructions for this can be found in [the readme file for the Duffle GitHub repository][duffle-readme]
@@ -23,6 +23,6 @@ If you already have a Go development environment configured, you can also clone 
 [duffle]: https://github.com/deislabs/duffle
 [duffle-releases]: https://github.com/deislabs/duffle/releases
 [docker-ce]: https://docs.docker.com/install/#supported-platforms
-[azure-pass]: https://TODO
+[azure-pass]: https://https://www.microsoftazurepass.com/
 [create-aks]: https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough
 [duffle-readme]: https://github.com/deislabs/duffle/blob/master/README.md

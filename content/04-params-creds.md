@@ -101,7 +101,7 @@ $ duffle build
 $ duffle install param-test helloworld --set greeting=HELLO
 Executing install action...
 hey I am installing things over here, HELLO was passed as param
-$ duffle uninstall param-test helloworld --set greeting=GOODBYE
+$  duffle uninstall param-test --set greeting=GOODBYE
 Executing uninstall action...
 hey I am uninstalling things now, GOODBYE was passed as param
 ```
