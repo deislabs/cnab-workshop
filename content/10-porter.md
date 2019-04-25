@@ -16,4 +16,4 @@ Learn more about [when you would use porter or duffle][porter-or-duffle].
 * Hello World
 * Kubernetes Hello World
 
-[porter-or-duffle]: https://github.com/deislabs/porter/blob/master/porter-or-duffle.md
+[porter-or-duffle]: https://github.com/deislabs/porter/blob/master/docs/content/porter-or-duffle.md
