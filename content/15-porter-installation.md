@@ -1,7 +1,7 @@
 # Install Porter
 Porter requires duffle, so make sure you have [duffle installed](02-prerequisites.md).
 
-##MacOS
+## MacOS
 
 ```
 curl https://deislabs.blob.core.windows.net/porter/latest/install-mac.sh | bash
