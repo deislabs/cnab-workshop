@@ -13,7 +13,6 @@ Learn more about [when you would use porter or duffle][porter-or-duffle].
 
 # DEMO TIME!
 
-* Hello World
-* Kubernetes Hello World
+Let's see porter in action
 
 [porter-or-duffle]: https://github.com/deislabs/porter/blob/master/docs/content/porter-or-duffle.md
